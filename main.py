@@ -57,7 +57,7 @@ def send_click():
 
 # --- Global Control Variables ---
 running = False
-click_speed = 1/60  # 60 cps
+click_speed = 1/60  # 60 cps i.e. Each click happens every ~16.67 milliseconds
 
 def click_loop():
     """
@@ -89,8 +89,8 @@ print("Cookie Clicker Auto Clicker")
 print("Press q to start clicking, y to stop clicking, and Esc to exit.")
 
 # --- Set Hotkeys ---
-keyboard.add_hotkey('q', start_clicking)  # Start clicking with Ctrl+Q
-keyboard.add_hotkey('y', stop_clicking)   # Stop clicking with Ctrl+Y
+keyboard.add_hotkey('s', start_clicking)  # Start clicking with s
+keyboard.add_hotkey('e', stop_clicking)   # Stop clicking with e
 
 # Wait until Esc is pressed to exit the script
 keyboard.wait('esc')
